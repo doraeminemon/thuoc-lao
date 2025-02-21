@@ -51,6 +51,7 @@ func (h spaHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	// initialize db
 	dbName := "local.db"
 	primaryUrl := "https://thuoclaodb-doraeminemon.turso.io"
 	authToken := "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDAxMzYxMzEsImlhdCI6MTc0MDEzMjUzMSwiaWQiOiI5NDg4YzE0NS1kMDY3LTQwYWEtYThkOC0yMTAyYzY2ZGQ0OWIifQ.ubE-kcIlFEh-oLjxGtX6svx3BGSZwIyL3D9BVr3iKbdPRo3Y1r0tLZrpTitHNKQcVmZnSwA0AkVjMcZvoL_cAQ"
@@ -78,6 +79,7 @@ func main() {
 
 	queryProducts(db)
 
+	// initialize router
 	router := mux.NewRouter()
 
 	router.HandleFunc("/api/health", func(w http.ResponseWriter, r *http.Request) {
