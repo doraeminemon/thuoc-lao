@@ -1,5 +1,23 @@
 @layer module, theme;
 
+@layer module {
+  .p-0 {
+    padding: 0;
+  }
+  .m-0 {
+    margin: 0;
+  }
+  .h-full {
+    height: 100vh;
+  }
+  .main {
+    background-color: var(--color-coral-100);
+    padding: 0px 32% 10%;
+    font-size: calc(min(100vw, 100vh) * 0.7);
+    color: var(--color-indigo-500);
+  }
+}
+
 @layer theme {
   :root {
     /* Palette */

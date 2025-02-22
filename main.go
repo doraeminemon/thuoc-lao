@@ -11,7 +11,6 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/tursodatabase/go-libsql"
 )
 
 // spaHandler implements the http.Handler interface, so we can use it
@@ -52,32 +51,32 @@ func (h spaHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	// initialize db
-	dbName := "local.db"
-	primaryUrl := "https://thuoclaodb-doraeminemon.turso.io"
-	authToken := "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDAxMzYxMzEsImlhdCI6MTc0MDEzMjUzMSwiaWQiOiI5NDg4YzE0NS1kMDY3LTQwYWEtYThkOC0yMTAyYzY2ZGQ0OWIifQ.ubE-kcIlFEh-oLjxGtX6svx3BGSZwIyL3D9BVr3iKbdPRo3Y1r0tLZrpTitHNKQcVmZnSwA0AkVjMcZvoL_cAQ"
+	// dbName := "local.db"
+	// primaryUrl := "https://thuoclaodb-doraeminemon.turso.io"
+	// authToken := "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDAxMzYxMzEsImlhdCI6MTc0MDEzMjUzMSwiaWQiOiI5NDg4YzE0NS1kMDY3LTQwYWEtYThkOC0yMTAyYzY2ZGQ0OWIifQ.ubE-kcIlFEh-oLjxGtX6svx3BGSZwIyL3D9BVr3iKbdPRo3Y1r0tLZrpTitHNKQcVmZnSwA0AkVjMcZvoL_cAQ"
 
-	dir, err := os.MkdirTemp("", "libsql-*")
-	if err != nil {
-		fmt.Println("Error creating temporary directory:", err)
-		os.Exit(1)
-	}
-	defer os.RemoveAll(dir)
+	// dir, err := os.MkdirTemp("", "libsql-*")
+	// if err != nil {
+	// 	fmt.Println("Error creating temporary directory:", err)
+	// 	os.Exit(1)
+	// }
+	// defer os.RemoveAll(dir)
 
-	dbPath := filepath.Join(dir, dbName)
+	// dbPath := filepath.Join(dir, dbName)
 
-	connector, err := libsql.NewEmbeddedReplicaConnector(dbPath, primaryUrl,
-		libsql.WithAuthToken(authToken),
-	)
-	if err != nil {
-		fmt.Println("Error creating connector:", err)
-		os.Exit(1)
-	}
-	defer connector.Close()
+	// connector, err := libsql.NewEmbeddedReplicaConnector(dbPath, primaryUrl,
+	// 	libsql.WithAuthToken(authToken),
+	// )
+	// if err != nil {
+	// 	fmt.Println("Error creating connector:", err)
+	// 	os.Exit(1)
+	// }
+	// defer connector.Close()
 
-	db := sql.OpenDB(connector)
-	defer db.Close()
+	// db := sql.OpenDB(connector)
+	// defer db.Close()
 
-	queryProducts(db)
+	// queryProducts(db)
 
 	// initialize router
 	router := mux.NewRouter()
