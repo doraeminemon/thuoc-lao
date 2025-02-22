@@ -1,4 +1,4 @@
 
 Todo:
-  [] Integrate with Vue
-  [] Integrate with Tailwind
+  [x] Add theme
+  [x] Add main text
