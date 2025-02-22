@@ -16,6 +16,12 @@
     font-size: calc(min(100vw, 100vh) * 0.7);
     color: var(--color-indigo-500);
   }
+  @media screen and (max-width: 500px) {
+    .main {
+      font-size: calc(min(100vw, 100vh) * 0.6);
+      padding: 40% 21%;
+    }
+  }
 }
 
 @layer theme {
