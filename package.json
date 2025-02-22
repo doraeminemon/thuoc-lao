@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@stackbit/cms-git": "^1.0.34",
+    "@stackbit/types": "^2.1.14"
+  }
+}
