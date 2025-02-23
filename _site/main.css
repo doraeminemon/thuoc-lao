@@ -30,6 +30,13 @@
     background-color: var(--color-coral-100);
     color: var(--color-indigo-500);
   }
+  a {
+    color: var(--color-indigo-500);
+    transition: all 200ms ease-in-out;
+  }
+  a:hover {
+    color: var(--color-indigo-300);
+  }
 }
 
 @layer theme {
