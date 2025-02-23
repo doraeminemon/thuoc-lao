@@ -26,14 +26,14 @@
   }
   .main {
     background-color: var(--color-coral-100);
-    color: var(--color-indigo-500);
+    color: var(--color-mandarin-700);
   }
   a {
-    color: var(--color-indigo-500);
+    color: var(--color-mandarin-700);
     transition: all 200ms ease-in-out;
   }
   a:hover {
-    color: var(--color-indigo-300);
+    color: var(--color-mandarin-400);
   }
 }
 
