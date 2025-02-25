@@ -24,21 +24,48 @@
   .h-full {
     height: 100vh;
   }
-  .main {
+  body {
     background-color: var(--color-coral-100);
     color: var(--color-mandarin-700);
+    font-family: "Merriweather", "Noto Serif JP", serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    min-height: 100vh;
+  }
+  body,
+  section {
+    margin: 0px;
+    padding: 0px;
+  }
+  section {
+    margin: 0.5rem 2rem 0px;
   }
   a {
     color: var(--color-mandarin-700);
     transition: all 200ms ease-in-out;
+    text-decoration: none;
   }
   a:hover {
     color: var(--color-mandarin-400);
+  }
+  p {
+    margin: 0px;
+    line-height: 1.7em;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--primary-accent);
   }
 }
 
 @layer theme {
   :root {
+    --primary-accent: var(--color-coral-800);
     /* Palette */
     --color-mandarin-50: #fef0ec;
     --color-mandarin-100: #fde5dd;
