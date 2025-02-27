@@ -1,0 +1,37 @@
+{
+  "name": "thuoc-lao",
+  "version": "0.1.0",
+  "description": "website about thuoc-lao",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doraeminemon/thuoc-lao.git"
+  },
+  "keywords": [
+    "thuoc-lao",
+    "tobacco",
+    "substance",
+    "website",
+    "culture"
+  ],
+  "author": "Do Dinh Thy Son",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doraeminemon/thuoc-lao/issues"
+  },
+  "homepage": "https://github.com/doraeminemon/thuoc-lao#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.9",
+    "@tailwindcss/postcss": "^4.0.9",
+    "postcss": "^8.5.3",
+    "preline": "^2.7.0",
+    "tailwindcss": "^4.0.9"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.2",
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  }
+}
