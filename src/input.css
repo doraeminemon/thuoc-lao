@@ -62,4 +62,39 @@
     --color-indigo-800: #0d1726;
     --color-indigo-900: #070c13;
     --color-indigo-950: #04070b;
+
+    --font-serif: "Merriweather", "Noto Serif JP", "serif";
+}
+
+@layer components {
+    body {
+        @apply bg-coral-100 text-mandarin-700 min-h-screen font-serif;
+    }
+    body,
+    section {
+        @apply m-0 p-0;
+    }
+    section {
+        @apply mt-8 mx-8;
+    }
+    a {
+        @apply text-mandarin-700 no-underline transition-all duration-200 ease-in-out;
+    }
+    a:hover {
+        @apply text-mandarin-400;
+    }
+    p {
+        @apply m-0 leading-7;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply text-coral-800;
+    }
+    h2 {
+        @apply mb-4;
+    }
 }
